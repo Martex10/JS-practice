@@ -1,0 +1,79 @@
+// learning if and else if statement
+
+
+// var age = Number(prompt("How old are you?"));
+
+// if(Math.sign(age) === -1){
+//     console.log("ERROR");
+// }
+
+// else if (age === 21){
+//     console.log("happy 21st birthday!! Give them a free shot");
+// }
+
+// else if(!(0 == (age % 2))){
+//     console.log("your age is odd");
+// }
+// else if(age % Math.sqrt(age) === 0){
+//     console.log("perfect square");
+// }
+// else {
+//     console.log("wow your " + age + " years old")
+// }
+
+
+
+// secret number game
+// ask user for guess
+//var guess = Number(prompt("guess a whole number at or between 1 and 10"));
+// check if guess is right
+//if(guess === secretNumber){
+//    alert("you got it right!");
+//} else if( guess > secretNumber){
+//    alert("to high guess again");
+//} else {
+//    alert("to low guess again");
+//}
+
+// while practice
+console.log("problem 1print all numbers between -10 and 19");
+//i thought about this one as simply start counting 
+let number = -10;
+while(number < 20){
+    console.log(number);
+    number++;
+}
+console.log("problem 2 print all even between 10 and 40");
+// so we start with 10 and add 2 at a time counting to 40 to get our even numbers.
+
+let numbe = 10;
+while(numbe < 40){
+    console.log(numbe);
+    numbe+=2;
+}
+
+
+console.log("problem 3 print all odd numbers between 300 and 333");
+// i know that 301 is an odd number so i can't count up by 3 that method would also skip other odd numbers
+// maybe i need a way to check if the number is odd then just print it if a boolean is true. 
+//ill have to start the count from 300
+let numb = 300;
+
+while(numb <= 333){
+    if( (numb % 2) !== 0){    
+        console.log(numb);
+    }
+    numb++;
+}
+
+console.log("problem 4 Print all numbers divisible by 5 AND 3 between 5 and 50");
+// similer consept as before i beleive. i need to count 5 to 50 first 
+// then have a block of code to check and see if the number meets the required criteria and then print it
+// i need a logical opporatior to confirm that the number is both true for being divisible by 5 and 3
+let num = 5;
+while(num <= 50){
+    if(((num % 3) === 0) && ((num % 5)=== 0)){
+        console.log(num);    
+    }
+    num++
+}
