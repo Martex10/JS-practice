@@ -1,0 +1,68 @@
+// i want to have a program that will ask the same question untill answered correctly so a loop is needed 
+//not just if else statements -but ill do one to make sure i have the proper syntax
+
+// let responce = prompt("Are we there yet?!");
+//  if(responce === "yes" || "yea");
+//     alert("Yay, We made it!");
+// }
+
+// i read chapter 2 in eloquent javascript and i think a code block useing switch may work 
+
+// switch (prompt("Are we there yet?!")){
+//     case "yes":
+//         alert("Yay, We made it!");
+//         break;
+//     case "yea":
+//         alert("Yay, We made it!");
+//         break;
+//         default:
+//         prompt("Are we there yet?!");
+//         break;
+// }
+//this does not work as far as i can tell. i cant figure out how to loop it back 
+
+// let responce = prompt("are we there yet");
+// while( responce !== "yes" || "yeah"){
+//     prompt(responce);
+// }
+
+//it seams i keep making endless loops
+//found out i can put the variable or binding in side of the while loop 
+
+//  var responce = prompt("Are we there yet?!");
+//  while( responce !== "yes" && responce !== "yeah") {
+//     var responce = prompt("Are we there yet?!");
+// }
+// alert("Yay, We made it!");
+//it seams that we needed to use && instead of || and rewrite the 
+//i found out that useing let binding is not able to work in side of the while loop as it needs to be global.
+//it seams that the let is not working
+
+//FIZZ BUZZ 
+
+//ok first lets write a program that prints 1 to 100
+var buzz = 5;
+var fizz = 3;
+
+for(var num = 1 ; num <= 100 ; num++){
+    if(num % fizz === 0 && num % buzz === 0){
+        console.log("FIZZ BUZZ");
+} else if(num % fizz === 0){
+    console.log("FIZZ");
+}else if(num % buzz === 0){
+    console.log("BUZZ");
+}else{
+    console.log(num);
+}
+} 
+
+// it took me a while to get this one afteri counted from 1-100 i added if else to write FIZZ and BUZZ and 
+//FIZZ BUZZ but they apeared next to the number rather then replacing it.
+//i tried adding a switch statement but the script always ended after replacing 3 with FIZZ
+//i then researched continue. i found that it is supose to have the ability to continue the program
+//i placed it below the break statement thinking that it would continue but that is not what happened a
+//and i didnt know why. i also found out that i could completely write the if else statement all the way out
+//with out useing break or continue.
+
+
+
