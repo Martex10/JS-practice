@@ -1,0 +1,32 @@
+// Write a function printReverse() that takes an array as an argument and prints out the elements in the
+// array in reverse order(don't actually reverse the array itself)
+
+//first lets print the array index on each line useing a type of loop forEach()
+var array1 = ["one","two","three","four"];
+
+// array1.forEach(function(item,i){
+//     console.log(array1[i]);
+// });
+//expected out come
+// "one"
+// "two"
+// "three"
+// "four"
+
+//next we need find how to print Reverse
+
+// var array1Reversed = array1.reverse();
+// console.log(array1Reversed);
+// expected out come ["four","three","two","one"]
+
+//next we need to combind them togeather with the help of compartmentalising with functions
+
+function printReverse(ar){
+    return ar.reverse();
+}
+// console.log(printReverse(array1));
+
+
+printReverse(array1).forEach(function(item,i){
+    console.log(item);
+});
