@@ -1,0 +1,30 @@
+//Code Sandbox
+
+
+var hash = "#";
+var space =" ";
+var line = 8;
+var myString = ""
+
+
+for(var j = 0; j < line; j++){
+    for(var i = 0; i < line; i++){
+        if( myString.length /*correct (i+j)*/% 2 === 0){
+            myString += space;
+        } else {
+            myString += hash;
+        }
+    }
+    myString+= "\n";
+}
+
+console.log(myString);
+
+// used a loop inside a loop to make a grid. chess board. while doing this i found
+// that as long as i kept running my head into the wall would eventually find the 
+// answer. its something rare that i get frustrated. and i found for this that the 
+// frustration only came when i was destracted. 
+
+/*i got very far with this one and only needed help with getting the board to work when
+line was an odd number. after looking at the solution i realized that haveing i + j ment that 
+the first character of each line would always alternate and give the desiered pattern*/
