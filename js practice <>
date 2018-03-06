@@ -1,0 +1,51 @@
+// isUniform()
+/* write a function isUniform() which takes an array as an argument
+and returns true if all elements in the array are identical
+*/
+/* first lets write a function that is able to accept an array and capture the first index
+of that array as a variable */
+
+var numbers1 = [1,1,1,1];
+var numbers2 = [2,1,2,1];
+
+function isUniform(arr){
+    var constant = arr[0];
+
+    for(var i = 0; i < arr.length ; i++){
+        if(arr[i] !== constant){
+            console.log(false);
+            break;
+        } else {
+            console.log(true);
+        }
+    }
+}
+console.log(isUniform(numbers1));
+
+
+/*sumArray() write a function sumArray() that accepts
+an array of numbers and returns the sum of all numbers in the array*/
+
+//i first did this will a for loop because it was familiar
+
+// function sumArray(ar){
+//     var result = 0;
+//     for(var i = 0; i < ar.length; i++){
+//         result = result + ar[i];
+//     }
+//     return result;
+// }
+
+//then i re-created it with forEach
+    function sumArray(ar){
+        var result = 0;
+        ar.forEach(function(arItem){
+            result += arItem;
+        });
+        return result;
+    }
+
+
+ console.log(sumArray(numbers1));
+
+
