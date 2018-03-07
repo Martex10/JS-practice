@@ -1,0 +1,39 @@
+/*max()
+write a function max() that acceots an array of numbers and returns the maximum number in the array.
+*/
+let numGroup1 = [1,2,3]; //3
+
+let numGroup2 = [10,3,10,4];//10
+
+let numGroup3 = [-5,100];//100
+
+
+
+const max = function(ar){
+    result = 0;
+    ar.forEach(function(item){
+        if(item > result){
+            result = item;
+        }
+    });
+    return result;
+}
+
+console.log(max(numGroup3));
+
+// i decided to rewrite isUniform() problem and managed to get a single boolean true or false returned.
+let numGroup4 = [1,1,1,1];
+
+let numGroup5 = [2,1,1,1];
+
+const isUniform = function(ar){
+    boolean = true;
+    ar.forEach(function(item){
+        if(item !== ar[0]){
+            boolean = false;
+        }
+    });
+    return boolean;
+}
+
+console.log(isUniform(numGroup5));
