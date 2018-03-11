@@ -1,0 +1,29 @@
+//  movieDB
+// create an array of movie objescts. each movue should have a title, ratiing, and hasWacthed properties. 
+// Iterate through the arrat and print out something that looks like:
+// you have seen "Black Panther" - 4.9 stars
+//  you have not seen "Pasific Rim" - 3.0 stars
+//  you have not seen "Tomb Raider" - 4.0 stars
+//  you have seen "Avatar" - 5 stars
+
+var movie = [
+    {title: "Black Panther", hasWatched: true, rating: "4.9 stars"},
+    {title: "Pasific Rim", hasWatched: false, rating: "3.0 stars"},
+    {title: "Tomb Raider", hasWatched: false, rating: "4.0 stars"},
+    {title: "Avatar", hasWatched: true, rating: "5 stars"}
+];
+
+
+
+function movieStats(mArr){
+for( var i = 0; i < mArr.length; i++){
+    if(mArr[i].hasWatched === true){
+        var seen = "seen";
+    }else{
+        var seen = "not seen";
+    }
+    console.log("you have " + seen + " " + "\"" + mArr[i].title + "\"" + " - " + mArr[i].rating);
+}
+}
+
+ console.log(movieStats(movie));
