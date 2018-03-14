@@ -1,0 +1,35 @@
+let button = document.querySelector("button");
+let isPurple = false
+button.addEventListener("click",function(){
+    if(isPurple){
+        document.body.style.background = "white";
+        isPurple = false;
+    }else{
+        document.body.style.background = "purple";
+        isPurple = true;
+    }
+
+});
+
+
+
+
+
+/*bellow is html used*/
+    // <!DOCTYPE html>
+    // <html>
+    // <head>
+    //     <title>Test</title>
+    // </head>
+    // <body>
+    //     <h1>Hello</h1>
+    //     <h1>Goodbye</h1>
+    //     <ul>
+    //         <li id="highlight">List Item 1</li>
+    //         <li class="bolded">List Item 2</li>
+    //         <li class="bolded">List Item 3</li>
+    //     </ul>
+    //     <button>click me</button>
+    //     <script src="jspractice2.js"></script>
+    // </body>
+    // </html>
