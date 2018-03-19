@@ -1,0 +1,30 @@
+let journal = [
+  {events: ["work", "touched tree", "pizza",
+            "running", "television"],
+   squirrel: false},
+  {events: ["work", "ice cream", "cauliflower",
+            "lasagna", "touched tree", "brushed teeth"],
+   squirrel: false},
+  {events: ["weekend", "cycling", "break", "peanuts",
+            "beer"],
+   squirrel: true},
+  /* and so on... */
+];
+
+/*sudo code that helped me move through the problem*/
+//access each object
+//access each object property
+//if object has array, access it
+//print each item in array
+//print second object value
+
+// for(let i = 0; i < journal.length; i++){
+//     console.log(journal[i]);
+//     for(let j = 0; j < journal[i].events.length; j++){
+//         console.log(journal[i].events[j]);
+//     }
+//     console.log(journal[i].squirrel);
+// }
+
+//i fugured the program would be longer 
+
