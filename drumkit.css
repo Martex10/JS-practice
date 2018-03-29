@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+html {
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    height: 100%;
+}
+.key {
+    flex-grow: 1;
+    border: solid 2px gray;
+    text-align: center;
+    margin: 47.5% 1%;
+    display: block;
+    transition: all 0.07s;
+}
+.playing{
+    border-color: #ffc600;
+    transform: scale(1.1);
+}
